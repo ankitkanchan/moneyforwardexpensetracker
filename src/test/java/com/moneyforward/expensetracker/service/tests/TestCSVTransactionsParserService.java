@@ -26,7 +26,7 @@ public class TestCSVTransactionsParserService {
 
     @Test
     public void testGetOutputLedgerForPeriod(){
-        String response = csvTransactionsParserService.getOutputLedgerForPeriod("202306",
+        String response = csvTransactionsParserService.getOutputLedgerForPeriod("2023/06",
                 "src/test/java/com/moneyforward/expensetracker/service/tests/expenseFileforTest.csv");
         assertNotNull(response);
         assertEquals("{\"period\":\"2023/06\",\"total_income\":0,\"total_expenditure\":-720,\"transactions\":[{\"date\":\"2023/06/15\",\"amount\":-720,\"content\":\"transportation\"}]}",response);
@@ -34,7 +34,7 @@ public class TestCSVTransactionsParserService {
 
     @Test
     public void testGetOutputLedgerForPeriodAndWriteToFile(){
-        String response = csvTransactionsParserService.getOutputLedgerForPeriodAndWriteToFile("202306",
+        String response = csvTransactionsParserService.getOutputLedgerForPeriodAndWriteToFile("2023/06",
                 "src/test/java/com/moneyforward/expensetracker/service/tests/expenseFileforTest.csv","src/test/java/com/moneyforward/expensetracker/service/tests/logs.txt");
         assertNotNull(response);
         assertEquals("{\"period\":\"2023/06\",\"total_income\":0,\"total_expenditure\":-720,\"transactions\":[{\"date\":\"2023/06/15\",\"amount\":-720,\"content\":\"transportation\"}]}",response);
