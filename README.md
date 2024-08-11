@@ -21,6 +21,7 @@ Unit Tests are present in src/main/test/java/com/moneyforward/expensetracker/ser
 #Dependencies
 ==========
 This project requires maven and JDK1.8+ to build and compile.
+Once you have forked and cloned the repo to your system. Please run "mvn clean install" to build the project with the required dependencies.
 
 #Execution
 ===========
