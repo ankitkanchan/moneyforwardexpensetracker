@@ -31,3 +31,41 @@ B. Path to the file that records the history of wallet deposits and withdrawals.
 
 The program interface is user intuitive and user can enter each input step by step, one at a time.
 
+#Sample I/O
+===========
+
+Hi, Welcome to Expense Tracker, It is designed for personal use and generates a history of all deposits and withdrawals
+for a specified period.
+
+What specific period are you looking for the deposit and withdrawal statement for?.
+ Please specify in YYYYMM format 
+
+202303
+
+Please give the csv file name with absolute path to extract details from? 
+
+src/main/resources/expenseFile.csv
+
+Please specify the file path where you want output to be logged, leave blank for printing output on console? 
+
+""
+
+Output
+=======
+
+{
+  "period" : "2023/03",
+  "total_income" : 200000,
+  "total_expenditure" : 0,
+  "transactions" : [ {
+    "date" : "2023/03/01",
+    "amount" : 200000,
+    "content" : "salary"
+  } ]
+}
+
+ Do you want to continue(Y/N) 
+
+N
+Exiting !! Have a nice day.
+
