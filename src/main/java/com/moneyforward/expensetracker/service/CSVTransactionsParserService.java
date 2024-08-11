@@ -6,14 +6,6 @@ import com.moneyforward.expensetracker.utility.ValidationHelper;
 public class CSVTransactionsParserService {
 
     public String getOutputLedgerForPeriod(String periodRange, String csvInputFileName){
-        if(!ValidationHelper.isValidDateRange(periodRange)) {
-            System.out.println("\nIt seems you have entered an invalid period." +
-                    "\n Please try again and specify period in YYYYMM format. \n");
-            return "";
-        } else {
-            periodRange = periodRange.substring(0, 4) + "/" + periodRange.substring(4);
-        }
-
         if(!ValidationHelper.isValidFilePath(csvInputFileName)){
             System.out.println("\nIt seems you have entered an invalid file path." +
                     "\n Please try again and specify a valid path to a csv file. \n");
