@@ -1,0 +1,1 @@
+{"period":"2023/06","total_income":0,"total_expenditure":-720,"transactions":[{"date":"2023/06/15","amount":-720,"content":"transportation"}]}
